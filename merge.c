@@ -139,6 +139,19 @@ bool cargar_en_Memoria(tVector *vec,tProducto *prod,size_t ce)
     }
     return true;
 }
+bool cargar_en_Memoria_mov(tVector *vec,tMovimiento *mov,size_t ce)
+{
+
+    for(size_t i=0;i<ce;i++)
+    {
+        if(!asignar_Dato(vec,&mov[i]))
+    {
+        printf("Error al asignar dato");
+        return 0;
+    }
+    }
+    return true;
+}
 
 bool funcion_Merge(const char *archivo_uno,const char *archivo_dos,const char *temporal)
 {

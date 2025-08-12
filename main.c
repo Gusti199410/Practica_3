@@ -45,12 +45,12 @@ int main()
         printf("Error al crear memoria");
         return 0;
     }
-    if(!cargar_en_Memoria(&vec,&prod,ce_prod))
+    if(!cargar_en_Memoria(&vec,prod,ce_prod))
     {
         printf("Error al crear memoria");
         return 0;
     }
-     if(!cargar_en_Memoria(&vec_b,&prod_b,ce_b))
+     if(!cargar_en_Memoria_mov(&vec_b,prod_b,ce_b))
     {
         printf("Error al crear memoria");
         return 0;
@@ -64,13 +64,20 @@ int main()
 
     cargar_en_Archivo(prod_del_dia,&vec_b);
 
+        printf("\n*************************************************************\n");
+    printf("\n     ****                *PRIMER ELEMENTOS*                 ****            \n");
+    printf("\n*****************************************************************\n");
+
     mostrar_Elemento_Archivo(producto);
 
-    printf("\n***********************************************\n");
-
+    printf("\n****************************************************\n");
+    printf("\n                    SEGUNDO ELEMENTOS\n");
+    printf("\n****************************************************\n");
     mostrar_Elemento_Archivo(prod_del_dia);
 
-    printf("\n*****************************************************\n");
+    printf("\n*************************************************************\n");
+    printf("\n     ****                *MERGE*                 ****        \n");
+    printf("\n*************************************************************\n");
 
     if(!funcion_Merge(producto,prod_del_dia,temporal))
     {
