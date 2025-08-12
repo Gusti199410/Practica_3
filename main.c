@@ -2,8 +2,10 @@
 #define producto "producto.bin"
 #define prod_del_dia "prod_dia.bin"
 #define temporal "temp.bin"
+
 int main()
 {
+    printf("\nHOLA NUEVAS PRACTICAS\n");
     tVector vec;
     tVector vec_b;
     tProducto prod[]={{1,"torre de marfil",15},
