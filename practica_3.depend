@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1755032759 source:c:\users\thebestgus\desktop\repositorio\practica_3\main.c
+	"merge.h"
+
+1755005350 c:\users\thebestgus\desktop\repositorio\practica_3\merge.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1755032810 source:c:\users\thebestgus\desktop\repositorio\practica_3\merge.c
+	"merge.h"
+
