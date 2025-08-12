@@ -36,8 +36,12 @@ bool asignar_Memoria(tVector *vec);
 bool liberar_Memoria(tVector *vec);
 bool asignar_Dato(tVector *vec, void *dato);
 void mostrar_Elemento_Memoria(tVector *vec);
-
-
-
+void procesar_Nuevo_Ingreso(tMovimiento *mov,FILE *arcMov,FILE *arcTMP);
+bool cargar_en_Memoria(tVector *vec, tProducto *prod, size_t ce);
+bool cargar_en_Memoria_mov(tVector *vec, tMovimiento *mov, size_t ce);
+bool ordenar_Elementos(tVector *vec);
+bool cargar_en_Archivo(const char *archivo,tVector *vec);
+bool funcion_Merge(const char*archivo_uno,const char *archivo_dos,const char *temporal);
+void mostrar_Elemento_Archivo(const char *archivo);
 
 #endif // MERGE_H_INCLUDED
